@@ -1,0 +1,26 @@
+body{
+	background-color:#121212;
+	background-image:url(bayrak.png);
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	
+}
+div {
+	height:20px;
+	width:20px;
+	
+}               
+p {
+	color:white;
+	
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font:normal 100;
+}
+
+h1 {
+	color:white;
+	background-color:blue;	 
+	margin:50px 30px;
+	border:groove red 10px;
+}

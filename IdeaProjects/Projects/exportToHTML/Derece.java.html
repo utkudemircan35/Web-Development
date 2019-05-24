@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Derece.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #c792ea; font-style: italic;}
+.s1 { color: #eeffff;}
+.s2 { color: #89ddff;}
+.s3 { color: #c3e88d;}
+.s4 { color: #f78c6c;}
+</style>
+</head>
+<body bgcolor="#212121">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Derece.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Derece </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s0">while </span><span class="s2">(</span><span class="s0">true</span><span class="s2">) {</span>
+
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;-------------------------</span><span class="s1">\n</span><span class="s3">1.Celcius to Fahrenheit</span><span class="s1">\n</span><span class="s3">2.Fahrenheit to Celcius</span><span class="s1">\n</span><span class="s3">3.Kelvin to Celcius</span><span class="s1">\n</span><span class="s3">4.Kelvin to Fahrenheit</span><span class="s1">\n</span><span class="s3">5.Celcius to Kelvin</span><span class="s1">\n</span><span class="s3">6.Fahrenheit to Kelvin&quot;</span><span class="s2">);</span>
+            <span class="s1">Scanner scan </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+            <span class="s1">String sorgu </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+            <span class="s0">switch </span><span class="s2">(</span><span class="s1">sorgu</span><span class="s2">) {</span>
+                <span class="s0">case </span><span class="s3">&quot;1&quot;</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Celcius: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">derece </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s0">double </span><span class="s1">sonuc </span><span class="s2">= ((</span><span class="s1">derece</span><span class="s2">*</span><span class="s4">180</span><span class="s2">)/</span><span class="s4">100</span><span class="s2">)+</span><span class="s4">32</span><span class="s2">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Celcius = &quot;</span><span class="s2">+</span><span class="s1">derece</span><span class="s2">+</span><span class="s3">&quot;</span><span class="s1">\n</span><span class="s3">Fahrenhiet = &quot;</span><span class="s2">+</span><span class="s1">sonuc </span><span class="s2">);</span>
+                    <span class="s0">continue</span><span class="s2">;</span>
+
+                <span class="s0">case </span><span class="s3">&quot;2&quot;</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Fahrenheit: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">derece2 </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s0">double </span><span class="s1">sonuc2 </span><span class="s2">= (((</span><span class="s1">derece2</span><span class="s2">-</span><span class="s4">32</span><span class="s2">)*</span><span class="s4">100</span><span class="s2">)/</span><span class="s4">180</span><span class="s2">);</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Fahrenheit = &quot;</span><span class="s2">+</span><span class="s1">derece2</span><span class="s2">+</span><span class="s3">&quot;</span><span class="s1">\n</span><span class="s3">Celcius = &quot;</span><span class="s2">+</span><span class="s1">sonuc2 </span><span class="s2">);</span>
+                    <span class="s0">continue</span><span class="s2">;</span>
+
+                <span class="s0">case </span><span class="s3">&quot;3&quot;</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Kelvin: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">derece3 </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s0">if </span><span class="s2">(</span><span class="s1">derece3 </span><span class="s2">&lt; </span><span class="s4">0  </span><span class="s2">){</span>
+                        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Kelvin 0'dan küçük olamaz!&quot;</span><span class="s2">);</span>
+                        <span class="s0">continue</span><span class="s2">;</span>
+
+                    }
+                    <span class="s0">else</span><span class="s2">{</span>
+                        <span class="s0">double </span><span class="s1">sonuc3 </span><span class="s2">=</span><span class="s1">derece3</span><span class="s2">-</span><span class="s4">273</span><span class="s2">;</span>
+                        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Kelvin = &quot;</span><span class="s2">+</span><span class="s1">derece3</span><span class="s2">+</span><span class="s3">&quot;</span><span class="s1">\n</span><span class="s3">Celcius = &quot;</span><span class="s2">+</span><span class="s1">sonuc3</span><span class="s2">);</span>
+                    }
+                    <span class="s0">continue</span><span class="s2">;</span>
+
+                <span class="s0">case </span><span class="s3">&quot;4&quot;</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Kelvin: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">derece4 </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s0">if </span><span class="s2">(</span><span class="s1">derece4 </span><span class="s2">&lt; </span><span class="s4">0  </span><span class="s2">){</span>
+                        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Kelvin 0'dan küçük olamaz!&quot;</span><span class="s2">);</span>
+                        <span class="s0">continue</span><span class="s2">;</span>
+
+                    }
+                    <span class="s0">else</span><span class="s2">{</span>
+                        <span class="s0">double </span><span class="s1">sonuc4 </span><span class="s2">=(((</span><span class="s1">derece4</span><span class="s2">-</span><span class="s4">273</span><span class="s2">)*</span><span class="s4">180</span><span class="s2">)/</span><span class="s4">100</span><span class="s2">)+</span><span class="s4">32</span><span class="s2">;</span>
+                        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Kelvin = &quot;</span><span class="s2">+</span><span class="s1">derece4</span><span class="s2">+</span><span class="s3">&quot;</span><span class="s1">\n</span><span class="s3">Fahrenheit = &quot;</span><span class="s2">+</span><span class="s1">sonuc4</span><span class="s2">);</span>
+
+                    }
+                    <span class="s0">continue</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s3">&quot;5&quot;</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Celcius: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">derece5 </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s0">double </span><span class="s1">sonuc5 </span><span class="s2">= </span><span class="s1">derece5</span><span class="s2">+</span><span class="s4">273</span><span class="s2">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Celcius = &quot;</span><span class="s2">+</span><span class="s1">derece5</span><span class="s2">+</span><span class="s3">&quot;</span><span class="s1">\n</span><span class="s3">Kelvin = &quot;</span><span class="s2">+</span><span class="s1">sonuc5</span><span class="s2">);</span>
+                    <span class="s0">continue</span><span class="s2">;</span>
+
+                <span class="s0">case </span><span class="s3">&quot;6&quot;</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Fahrenheit: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">derece6 </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s0">double </span><span class="s1">sonuc6 </span><span class="s2">= (((</span><span class="s1">derece6</span><span class="s2">-</span><span class="s4">32</span><span class="s2">)*</span><span class="s4">100</span><span class="s2">)/</span><span class="s4">180</span><span class="s2">)+</span><span class="s4">273</span><span class="s2">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Fahrenheit = &quot;</span><span class="s2">+</span><span class="s1">derece6</span><span class="s2">+</span><span class="s3">&quot;</span><span class="s1">\n</span><span class="s3">Kelvin = &quot;</span><span class="s2">+</span><span class="s1">sonuc6</span><span class="s2">);</span>
+                    <span class="s0">continue</span><span class="s2">;</span>
+                <span class="s0">default</span><span class="s2">:</span>
+                    <span class="s0">continue</span><span class="s2">;</span>
+
+            }
+
+
+        }
+
+    }
+}
+</pre>
+</body>
+</html>
