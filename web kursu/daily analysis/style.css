@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    background: rgb(0, 254, 255);
+    background: linear-gradient(150deg, rgba(0, 254, 255, 1) 0%, rgba(0, 39, 255, 1) 100%);
+}
+
+.card-body {
+    background-color: white;
+    width: 1500px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+#title {
+    font-family: Comfortaa;
+}
+
+.form-row {
+    display: inline;
+}
